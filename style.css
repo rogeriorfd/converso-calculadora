@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    /* Busca uma imagem moderna de matemática/calculadora em alta definição */
+    background-image: linear-gradient(rgba(123, 146, 187, 0.85), rgba(44, 62, 80, 0.85)), 
+                     url('https://unsplash.com');
+    
+    /* Garante que a imagem cubra a tela inteira sem se repetir */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    margin: 0;
+}
+
+
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.converter-card, .calculator-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#convert-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.result-container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #e9ecef;
+    border-radius: 6px;
+}
+
+#calc-display {
+    text-align: right;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #f8f9fa;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.calc-buttons button {
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #e9ecef !important;
+    color: #333 !important;
+    font-weight: bold;
+}
+
+.calc-buttons .btn-op {
+    background-color: #ff9f0a !important;
+    color: white !important;
+}
+
+.calc-buttons .btn-clear {
+    background-color: #a5a5a5 !important;
+    color: white !important;
+}
+
+#btn-equal {
+    background-color: #28a745 !important;
+    color: white !important;
+    grid-row: span 2;
+    height: 100%;
+}
